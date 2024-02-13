@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "inJsDucmk7MqVQw/Qtvi//J3RPTsRZgQf9NP2Qpu9Exfv3YWgvIFvZITTlree8Yoh/utM8vKJ79vGi2BNqLpnQ==",
+  "success": true,
+  "projectFilePath": "C:\\Projects\\div_AI_ting\\AI-services\\AI-api\\ai-api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\LudvigLillebyJohanss\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\LudvigLillebyJohanss\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\LudvigLillebyJohanss\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "C:\\Users\\LudvigLillebyJohanss\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "C:\\Users\\LudvigLillebyJohanss\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "C:\\Users\\LudvigLillebyJohanss\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
