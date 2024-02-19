@@ -14,10 +14,12 @@ namespace ai_api.Controllers
 
         private static readonly string[] Summaries = new[]
         {
-            "GPT", "Moxtral", "LLama"
+            "Translate"
         };
 
         private readonly ILogger<AIController> _logger;
+        //private static string FEATURE;
+        private static readonly string TRANSLATE_ROUTE = $"/translate?api-version=3.0&to=es";
 
         public AIController(ILogger<AIController> logger, IHttpClientFactory httpClientFactory)
         {
@@ -27,15 +29,14 @@ namespace ai_api.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Translate([FromBody]TranslationRequest transReq)
+        public async Task<IActionResult> Translate([FromBody] TranslationRequest transReq)
         {
             string textToTranslate = transReq.Text;
-            
-            string route = "/translate?api-version=3.0&from=en&to=es";
 
             string requestBody = "[{'Text':'" + textToTranslate + "'}]";
             var content = new StringContent(requestBody, Encoding.UTF8, "application/json");
-            HttpResponseMessage response = await _httpClient.PostAsync(route, content);
+            HttpResponseMessage response = await _httpClient.PostAsync(TRANSLATE_ROUTE, content);
+
             string result = await response.Content.ReadAsStringAsync();
 
             if (response.IsSuccessStatusCode)
